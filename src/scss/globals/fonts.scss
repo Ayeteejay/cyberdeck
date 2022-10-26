@@ -1,0 +1,19 @@
+@use "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600&display=swap");
+
+body,
+html {
+  font-family: "IBM Plex Mono", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: variables.$primary_green;
+}
+p {
+  color: variables.$primary_green;
+}

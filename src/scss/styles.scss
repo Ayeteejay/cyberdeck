@@ -1,5 +1,50 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@use "./globals";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
-body, html{
-    background:black;
+// CSS Resets
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  background: globals.$space_gray;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+// Styles
+input {
+  background: none;
+  border: none;
+  color: globals.$primary_green;
 }
