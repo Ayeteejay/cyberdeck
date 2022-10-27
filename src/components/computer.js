@@ -10,8 +10,11 @@ const Computer = ({ children }) => {
             <main id="computer-body">
               <Container>
                 <Row>
-                  <Col>
-                    <div id="computer-screen">{children}</div>
+                  <Col className="p-0">
+                    <div id="computer-screen-border">
+                      <div id="computer-screen">{children}</div>
+                      <span id="power-light"></span>
+                    </div>
                   </Col>
                 </Row>
               </Container>
