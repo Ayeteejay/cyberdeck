@@ -7,7 +7,7 @@ const Computer = ({ children }) => {
       <Container fluid>
         <Row>
           <Col md={8} className="mx-auto my-5">
-            <main id="computer-body">
+            <main id="computer-body" className="mx-auto">
               <Container>
                 <Row>
                   <Col className="p-0">

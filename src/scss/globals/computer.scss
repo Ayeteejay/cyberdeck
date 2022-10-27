@@ -21,6 +21,7 @@ main#computer-body {
   border-radius: 1rem;
   -webkit-box-shadow: 0px 9px 11px 0px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 9px 11px 0px rgba(0, 0, 0, 0.63);
+  max-width: 800px;
 }
 #computer-screen-border {
   box-shadow: inset 0 0 40px variables.$plastic_light_black;
@@ -55,7 +56,7 @@ span#power-light {
   #computer-screen {
     border-radius: 0;
     box-shadow: none;
-    height: 75vh;
+    height: 100%;
   }
   span#power-light {
     display: none;
