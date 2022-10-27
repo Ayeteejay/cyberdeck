@@ -10,6 +10,10 @@ const Index = () => {
         <Row>
           <Col>
             <p>Welcome. Enter prompt.</p>
+            <p className="last-terminal-description">
+              Earum, modi commodi tenetur in voluptate quibusdam odio? Something
+              else?
+            </p>
           </Col>
         </Row>
         <Row>

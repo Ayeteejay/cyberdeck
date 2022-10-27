@@ -7,17 +7,19 @@ const Computer = ({ children }) => {
       <Container fluid>
         <Row>
           <Col md={8} className="mx-auto my-5">
-            <main id="computer-body" className="mx-auto">
-              <Container>
-                <Row>
-                  <Col className="p-0">
-                    <div id="computer-screen-border">
-                      <div id="computer-screen">{children}</div>
-                      <span id="power-light"></span>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
+            <main id="computer-body">
+              <div id="computer-monitor" className="mx-auto">
+                <Container>
+                  <Row>
+                    <Col className="p-0">
+                      <div id="computer-screen-border">
+                        <div id="computer-screen">{children}</div>
+                        <span id="power-light"></span>
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
             </main>
           </Col>
         </Row>

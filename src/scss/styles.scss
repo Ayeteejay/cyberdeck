@@ -48,3 +48,43 @@ input {
   border: none;
   color: globals.$primary_green;
 }
+
+@-webkit-keyframes terminal {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes terminal {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+p.last-terminal-description {
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: "";
+    display: inline-block;
+    background: globals.$primary_green;
+    bottom: 4px;
+    margin: 0 0 0 0.25rem;
+    position: absolute;
+    width: 9px;
+    height: 1rem;
+    -webkit-animation: terminal 1s step-end infinite;
+    animation: terminal 1s step-end infinite;
+  }
+}
