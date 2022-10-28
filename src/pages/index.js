@@ -2,6 +2,7 @@ import * as React from "react";
 import "../scss/styles.scss";
 import { Col, Row, Container } from "react-bootstrap";
 import Computer from "../components/computer";
+import Commands from "../components/commands";
 
 const Index = () => {
   return (
@@ -9,16 +10,12 @@ const Index = () => {
       <Container>
         <Row>
           <Col>
-            <p>Welcome. Enter prompt.</p>
-            <p className="last-terminal-description">
-              Earum, modi commodi tenetur in voluptate quibusdam odio? Something
-              else?
-            </p>
+            <p className="last-terminal-description">Welcome to Cyberdeck.</p>
           </Col>
         </Row>
         <Row>
           <Col>
-            <input type="text" placeholder="Enter directions here." />
+            <Commands placeholder={"Enter command."}></Commands>
           </Col>
         </Row>
       </Container>

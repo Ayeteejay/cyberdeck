@@ -1,0 +1,12 @@
+@use "./variables.scss";
+
+input {
+  background: none;
+  border: none;
+  color: variables.$primary_green;
+  width: 100%;
+  outline: none;
+  &::placeholder {
+    color: variables.$primary_green;
+  }
+}
