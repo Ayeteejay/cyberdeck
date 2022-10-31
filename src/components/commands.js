@@ -5,12 +5,27 @@ const Commands = (props) => {
   const [command, typeCommand] = useState("");
 
   const startProgram = (event) => {
+    const commandInput = document.getElementById("command-input");
+    const commandWindow = document.getElementById("command-window");
     if (event.key === "Enter") {
+      const userCommand = command.toLowerCase();
       console.log(command);
-      // Testing logic below
-      if (command.toLowerCase() === "hello") {
-        alert("hello human");
+      // Main logic
+      if (userCommand === "hello") {
+        commandWindow.innerText = "Hello.";
+      } else if (
+        userCommand === "back" ||
+        userCommand === "exit" ||
+        userCommand === "main menu"
+      ) {
+        commandWindow.innerText = "Back to main menu.";
       }
+      // Error message
+      else {
+        commandWindow.innerText = "I do not understand.";
+      }
+      // Clear out previous commands
+      commandInput.placeholder = "";
       typeCommand("");
     }
   };
@@ -18,6 +33,7 @@ const Commands = (props) => {
   return (
     <>
       <input
+        id="command-input"
         placeholder={props.placeholder}
         onChange={(e) => typeCommand(e.target.value)}
         onKeyDown={startProgram}

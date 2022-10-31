@@ -10,7 +10,13 @@ const Index = () => {
       <Container>
         <Row>
           <Col>
-            <p className="last-terminal-description">Welcome to Cyberdeck.</p>
+            <p id="command-window">
+              Welcome to Cyberdeck. To get started enter one of the following
+              commands.<br></br>
+              1. Play game<br></br>
+              2. How to play<br></br>
+              3. Credits
+            </p>
           </Col>
         </Row>
         <Row>

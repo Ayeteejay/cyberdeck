@@ -79,7 +79,7 @@ span#power-light {
     opacity: 1;
   }
 }
-p.last-terminal-description {
+p#command-window {
   position: relative;
   display: inline-block;
   &:after {
