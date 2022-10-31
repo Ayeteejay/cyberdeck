@@ -56,6 +56,14 @@ span#power-light {
   animation: power-glow 1s infinite;
 }
 
+section#status {
+  border-bottom: 1px solid variables.$primary_green;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
+}
 @-webkit-keyframes terminal {
   0% {
     opacity: 1;
@@ -67,7 +75,6 @@ span#power-light {
     opacity: 1;
   }
 }
-
 @keyframes terminal {
   0% {
     opacity: 1;
@@ -94,6 +101,10 @@ p#command-window {
     -webkit-animation: terminal 1s step-end infinite;
     animation: terminal 1s step-end infinite;
   }
+}
+h1#command-title {
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 // Media Queries
